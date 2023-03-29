@@ -30,14 +30,14 @@ function App() {
     <div>
       <Header>
         <Container>
-          <h1>Wilders Book with CD</h1>
+          <h1>LA SUPER MODIF n°3</h1>
         </Container>
       </Header>
       <Container>
         <AddWilder />
       </Container>
       <Container>
-        <h2>Wilders</h2>
+        <h2>WILDER</h2>
         <CardRow>
           {data?.wilders.map((wilder) => (
             <Wilder key={wilder._id} {...wilder} />
@@ -49,6 +49,17 @@ function App() {
           <p>&copy; 2020 Wild Code School</p>
         </Container>
       </Footer>
+      {/* [Unit]
+Description=Small server for creating HTTP endpoints (hooks)
+Documentation=https://github.com/adnanh/webhook/
+ConditionPathExists=/etc/webhook.conf                                                     
+
+[Service]
+User=wns_student
+ExecStart=/usr/bin/webhook -nopanic -hooks /etc/webhook.conf
+
+[Install]
+WantedBy=multi-user.target */}
     </div>
   );
 }
